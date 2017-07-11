@@ -1,0 +1,10 @@
+//import ij.IJ;
+//import ij.plugin.PlugIn;
+import ij.*;
+import ij.plugin.*;
+ 
+public class IPWorkFlow_ implements PlugIn {
+	public void run(String arg) {
+		IJ.error("Olá Mundo!");
+	}
+}

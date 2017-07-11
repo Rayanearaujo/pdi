@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="watershed" key="selection"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="grayscale"/>
+			<item value="Grayscale"/>
+			<item value="analyseParticles"/>
+			<item value="analyzeParticles"/>
+			<item value="AnalyzeParticles"/>
+			<item value="maxCircles"/>
+			<item value="MaxCircles"/>
+			<item value="mundo"/>
+		</list>
+		<list key="replacehistory">
+			<item value="watershed"/>
+			<item value="Watershed"/>
+			<item value="fillHoles"/>
+			<item value="FillHoles"/>
+			<item value="analyseParticles"/>
+			<item value="AnalyzeParticles"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="321" key="DIALOG_WIDTH"/>
+		<item value="1|Noto Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="414" key="DIALOG_HEIGHT"/>
+		<item value="1286" key="DIALOG_X_ORIGIN"/>
+		<item value="400" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

@@ -1,0 +1,44 @@
+package view;
+
+import javax.swing.JButton;
+
+import view.ImageProcessingPanel;
+
+public class EraseNoisePanel extends ImageProcessingPanel {
+
+	protected JButton btnErosion;
+	protected JButton btnDilatation;
+	
+	@Override
+	public void setupPanel() {
+		super.setupPanel();
+		this.lblPanelTitle.setText("Step 5 - Erase Noise");
+		this.txtPanelDescription.setText("Sometimes, after binarization, little undesirable particles still appear on image.\n" + 
+				"\n" +
+				"To erase this particles a process called mathematical morphology can be applyed.\n" + 
+				"\n" +
+				"First you will apply a mathematical morphology process called erosion. This process can be applyed any times you want, until the undesireble particles can be erased.\n" + 
+				"\n" +
+				"A new process called dilatation need to be applyed the same number of times that the erosion,  to try bring the particles of interest to the original size.\n" + 
+				"\n" +
+				"Important: this process certainly will generate loss on the region of interest, then should be used with care.\n" +
+				"\n" +
+				"To apply erosion click on \"Erosion Button\", to apply dilatation click on \"Dilatation Button\"\n" +
+				"\n" +
+				"After the process click \"Next\" button.");
+		this.btnErosion = new JButton("Erosion");
+		this.btnErosion.setBounds(100, 371, 117, 25);
+		this.add(this.btnErosion);
+		this.btnDilatation = new JButton("Dilatation Noise");
+		this.btnDilatation.setBounds(230, 371, 117, 25);
+		this.add(this.btnDilatation);
+	}
+	
+	public JButton getBtnErosion() {
+		return this.btnErosion; 
+	}
+	
+	public JButton getBtnDilatation() {
+		return this.btnDilatation; 
+	}
+}

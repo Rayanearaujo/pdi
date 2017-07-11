@@ -1,0 +1,148 @@
+import ij.*;
+import ij.plugin.*;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+
+
+
+public class IPWorkFlow_ implements PlugIn {
+	public void run(String arg) {		
+		IJ.showMessage("Olá Mundo!");
+		IJ.redirectErrorMessages();
+		if (WindowManager.getActiveWindow() == null) {
+		      IJ.open();
+		}
+		OpenImageAlert frame = new OpenImageAlert();
+		frame.setVisible(true);
+		//ImagePlus imp = IJ.getImage();    
+        //IJ.log("Image name is:" + imp.getTitle());
+        IJ.showMessage("By Mundo!");
+	}
+}
+
+
+final class OpenImageAlert extends JFrame {
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+//	protected static void start() {
+//		EventQueue.invokeLater(new Runnable() {
+//			public void run() {
+//				try {
+//					OpenImageAlert frame = new OpenImageAlert();
+//					frame.setVisible(true);
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		});
+//	}
+
+	/**
+	 * Create the frame.
+	 */
+	public OpenImageAlert() {
+		setTitle("Image Processing - Open Image");
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 496, 265);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JButton btnAo = new JButton("Open Image");
+		btnAo.setToolTipText("Open image from \"File -> Open ...\" menu item.");
+		btnAo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showMessageDialog(null, "Teste");
+			}
+		});
+		contentPane.setLayout(null);
+		btnAo.setBounds(87, 194, 119, 25);
+		contentPane.add(btnAo);
+		
+		JButton btnCancel = new JButton("Cancel");
+		btnCancel.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				dispose();
+			}
+		});
+		btnCancel.setToolTipText("Open image from \"File -> Open ...\" menu item.");
+		btnCancel.setBounds(282, 194, 119, 25);
+		contentPane.add(btnCancel);
+		
+		JLabel lblToStartA = new JLabel("<html><div style='text-align: center;'>\n" +
+        "<font size=+1><font color=blue><b>TesteWelcome!<br><br></b></font>" +
+        "<font size=+1><font color=blue><b>Now a serie of dialog boxes will guide you to process and analyse your image.<br><br></b></font>\n" +
+        "<font size=+1><font color=blue><b>First is necessary to open a image.<br></b></font>\n" +
+        "</div></html>");
+        
+		lblToStartA.setBounds(40, 12, 420, 151);
+		contentPane.add(lblToStartA);
+		
+	}
+
+}
+
+
+//import ij.*;
+//import ij.plugin.*;
+//import javax.swing.*;
+//
+//public class IPWorkFlow_ implements PlugIn {
+//	public void run(String arg) {		
+//		IJ.showMessage("Olá Mundo!");
+//		IJ.redirectErrorMessages();
+//		if (WindowManager.getActiveWindow() == null) {
+//		      IJ.open();
+//		}
+//		//ImagePlus imp = IJ.getImage();    
+//        //IJ.log("Image name is:" + imp.getTitle());
+//        IJ.showMessage("By Mundo!");
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//            public void run() {
+//                createAndShowGUI();
+//            }
+//        });
+//   }
+//
+//	private static void createAndShowGUI() {
+//        //Create and set up the window.
+//        JFrame frame = new JFrame("HelloWorldSwing");
+//        
+//        //Add the ubiquitous "Hello World" label.
+//        JLabel label = new JLabel("Hello World");
+//        frame.getContentPane().add(label);
+//        
+//        //Display the window.
+//        frame.setSize(800, 600);
+//        //frame.pack();
+//        frame.setVisible(true);
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+

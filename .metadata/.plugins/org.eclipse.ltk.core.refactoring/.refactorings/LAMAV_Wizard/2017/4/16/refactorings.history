@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;controller.MainControler.java&apos; to &apos;MainController.java&apos;&#x0A;- Original project: &apos;IP_Wizard&apos;&#x0A;- Original element: &apos;controller.MainControler.java&apos;&#x0A;- Renamed element: &apos;controller.MainController.java&apos;" description="Rename compilation unit &apos;MainControler.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;controller{MainControler.java" name="MainController.java" references="false" stamp="1492550496227" version="1.0"/>
+</session>

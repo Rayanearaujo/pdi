@@ -1,0 +1,15 @@
+import ij.*;
+import ij.plugin.*;
+ 
+public class IPWorkFlow_ implements PlugIn {
+	public void run(String arg) {		
+		IJ.showMessage("Olá Mundo!");
+		IJ.redirectErrorMessages();
+		if (WindowManager.getActiveWindow() == null) {
+		      IJ.open();
+		}
+		//ImagePlus imp = IJ.getImage();    
+        //IJ.log("Image name is:" + imp.getTitle());
+        IJ.showMessage("By Mundo!");
+	}
+}

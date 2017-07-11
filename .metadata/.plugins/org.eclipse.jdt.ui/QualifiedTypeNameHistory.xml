@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ij.IJ.ExceptionHandler"/>
+<fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="controller.AnalyzeParticlesController"/>
+<fullyQualifiedTypeName name="ij.plugin.frame.ThresholdAdjuster"/>
+<fullyQualifiedTypeName name="controller.FillHolesController"/>
+<fullyQualifiedTypeName name="controller.WatershedController"/>
+<fullyQualifiedTypeName name="ij.plugin.tool.BrushTool"/>
+<fullyQualifiedTypeName name="ij.plugin.PlugIn"/>
+<fullyQualifiedTypeName name="view.MainGui"/>
+<fullyQualifiedTypeName name="controller.MainController"/>
+</qualifiedTypeNameHistroy>

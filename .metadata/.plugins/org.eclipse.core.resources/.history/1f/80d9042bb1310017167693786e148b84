@@ -1,0 +1,28 @@
+package view;
+
+import javax.swing.JButton;
+
+import view.ImageProcessingPanel;
+
+public class GrayscalePanel extends ImageProcessingPanel {
+
+	protected JButton btnGrayscale;
+	
+	@Override
+	public void setupPanel() {
+		super.setupPanel();
+		this.lblPanelTitle.setText("Step 2 - Change Image to Grayscale");
+		this.txtPanelDescription.setText("Now is necessary to change the image to grayscale Mode.\n" + 
+				"\n" +
+				"The image processing techniques here used need grayscale images.\n" + 
+				"\n" +
+				"Simple click on \"Grayscale\" button to change the mode of the image and then click \"Next\" button.\n");
+		this.btnGrayscale = new JButton("Grayscale");
+		this.btnGrayscale.setBounds(157, 371, 117, 25);
+		this.add(this.btnGrayscale);
+	}
+	
+	public JButton getBtnGrayscale() {
+		return this.btnGrayscale; 
+	}
+}
